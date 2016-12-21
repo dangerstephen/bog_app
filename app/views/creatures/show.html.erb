@@ -3,3 +3,6 @@ Hello! Im just your normal creature
 My Name is: <%= @creature.name%></br>
 
 And here is a little about me: <%= @creature.description%>
+
+<button><%= link_to "Edit", edit_creature_path(@creature) %></button>
+<button><%= link_to "Delete", @creature, method: :delete %></button>
